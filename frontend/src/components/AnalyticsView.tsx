@@ -61,11 +61,13 @@ export function AnalyticsView({ clothes }: AnalyticsViewProps) {
   };
 
   const handleSellOnDepop = (item: ClothingItem) => {
+    // TODO: Add call to AI fashion describer here
     window.open("https://www.depop.com/sell/", "_blank");
     toast.success(`Opening Depop to sell "${item.name}"`);
   };
 
   const handleSellOnVinted = (item: ClothingItem) => {
+    // TODO: Add call to AI fashion describer here
     window.open("https://www.vinted.com/catalog/new", "_blank");
     toast.success(`Opening Vinted to sell "${item.name}"`);
   };
